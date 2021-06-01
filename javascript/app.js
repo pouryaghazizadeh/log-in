@@ -16,20 +16,27 @@ document.body.append(motherDiv)
 
 /****  creat form tag****/
 const myForm = document.createElement("form")
-myForm.style.height ="300px"
-myForm.style.width = "200px"
+myForm.style.height ="430px"
+myForm.style.width = "700px"
 myForm.style.backgroundColor = "blue"
+// myForm.style.display = "flex"
 myForm.style.justifyContent = "center"
+// myForm
+// myForm.style.alignContent = "center"
 motherDiv.append(myForm)
 
 /**** creat h1(log in) and append to fotm tag ****/
 const myH = document.createElement("h1")
-// myH.valiu = "log in"
+myH.innerHTML ="Log in"
 myForm.append(myH)
 
 /**** creat div and username and append to form ****/
 const divUserName = document.createElement("div")
 divUserName.style.margin = "4px"
+divUserName.style.height ="10px"
+// divUserName.style.display ="inline"
+// divUserName.style.display ="block"
+// divUserName.style.justifyContent = "center"
 const userName = document.createElement("input")
 userName.type = "search"
 userName.placeholder = "user name"
@@ -48,4 +55,6 @@ myForm.append(divPassword)
 /*** creat button and append to form ***/
 const mySubMit = document.createElement("input")
 mySubMit.type = "submit"
+mySubMit.style.justifyContent = "center"
+// mySubMit.style.height = "2px"
 myForm.append(mySubMit)
