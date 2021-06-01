@@ -1,19 +1,30 @@
-
+body{
+    padding: 0px;
+    margin: 0px;
+}
 .container{
     display:flex;
     justify-content: center;
     align-items: center;
-    height:100%;
-    width:100%;
+    background-color: brown;
+    height:680px;
+    /* width:100%; */
+    padding: 0px;
+    margin: 0px;
 
 }
 .div-card-login{
-    background-color:blueviolet;
+    background-color:blue;
     height: 300px;
     width: 350px;
-    display: flex;
-    justify-content: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 .h1-login-class{
 font-family: monospace;
+}
+.search-class{
+    height: 14px;
+    width: 150px;
 }
