@@ -24,13 +24,13 @@ myForm.style.backgroundColor = "blue"
 myForm.style.textAlign = "center"
 myForm.style.display = "flex"
 myForm.style.flexDirection = "column"
-myForm.style.alignItems = "flex-start"
-myForm.style.justifyContent = "center"
-// myForm.style.alignItems = "center"
+// myForm.style.alignItems = "flex-start"
+// myForm.style.justifyContent = "center"
+myForm.style.alignItems = "center"
 
 // myForm
 // myForm.style.alignContent = "center"
-motherDiv.append(myForm)
+motherDiv.append(myForm) 
 
 /**** creat h1(log in) and append to fotm tag ****/
 const myH = document.createElement("h1")
@@ -40,11 +40,13 @@ myForm.append(myH)
 
 /**** creat div and username and append to form ****/
 const divUserName = document.createElement("div")
-divUserName.style.margin = "10px"
+divUserName.style.margin = "30px"
 divUserName.style.height ="5px"
+
 const userName = document.createElement("input")
 userName.type = "search"
 userName.placeholder = "user name"
+userName.style.width = "208px"
 divUserName.append(userName)
 myForm.append(divUserName)
 
@@ -54,6 +56,7 @@ divPassword.style.margin = "10px"
 const myPassword = document.createElement("input")
 myPassword.type = "password"
 myPassword.placeholder = "password"
+myPassword.style.width = "200px"
 divPassword.append(myPassword)
 myForm.append(divPassword)
 
@@ -62,9 +65,12 @@ const mySubMit = document.createElement("input")
 
 mySubMit.type = "submit"
 // mySubMit.style.alignItems = "center"
-mySubMit.style.width = "100px"
-mySubMit.style.border = "3px"
-// mySubMit.style.justifyContent = "center"
+mySubMit.style.width = "200px"
+mySubMit.style.height = "20px"
+mySubMit.style.borderRadius = "10px"
+mySubMit.style.border = "red"
+mySubMit.style.margin= "20px"
+
 
 // mySubMit.style.height = "2px"
 myForm.append(mySubMit)
